@@ -8,26 +8,40 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;           /* full screen height */
+      height: 100vh;
       margin: 0;
-      background-color: #0f0f0f; /* optional pleasant background */
+      background-color: #0f0f0f;
       font-family: sans-serif;
     }
 
     a {
       display: inline-block;
-      padding: 2vw 5vw;       /* scales with screen size */
-      font-size: 3vw;         /* scales with viewport width */
-      background-color: #4CAF50;
-      color: white;
+      transition: all 0.5s;
+      font-size: 17px;
+      padding: 1ch 2ch;
+      background-color: white;
+      color: #000;
+      cursor: pointer;
+      border: none;
+      border-radius: 2px;
       text-decoration: none;
-      border-radius: 12px;
       text-align: center;
+      box-shadow:
+        2px 2px 0px hsl(0, 0%, 90%),
+        4px 4px 0px hsl(0, 0%, 80%),
+        6px 6px 0px hsl(0, 0%, 70%),
+        8px 8px 0px hsl(0, 0%, 60%),
+        10px 10px 0px hsl(0, 0%, 50%),
+        12px 12px 0px hsl(0, 0%, 40%),
+        14px 14px 0px hsl(0, 0%, 30%),
+        16px 16px 0px hsl(0, 0%, 20%),
+        18px 18px 0px hsl(0, 0%, 10%);
     }
 
-    /* optional: hover effect */
     a:hover {
-      background-color: #45a049;
+      background-color: hsl(0, 0%, 50%);
+      color: #fff;
+      box-shadow: none;
     }
   </style>
 </head>
